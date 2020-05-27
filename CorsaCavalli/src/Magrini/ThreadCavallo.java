@@ -2,14 +2,14 @@ package Magrini;
 
 public class ThreadCavallo implements Runnable {
 	Cavallo cav;
-	GarettaCampo campetto;
+	GarettaPista pistina;
 	int v;
 	int pos;
 	
-	public ThreadCavallo( Cavallo c, GarettaCampo cam ){
+	public ThreadCavallo( Cavallo c, GarettaPista cam ){
 		cav = c;
-		campetto = cam;
-		pos = 0;
+		pistina = cam;
+		pos = 1;
 	}
 	
 	public void run() {
@@ -20,12 +20,14 @@ public class ThreadCavallo implements Runnable {
 			v = (int)(Math.random() * 10 + 1);
 			cav.setX(cav.getX() + v);
 			if ((cav.getX() + img) > luncamp) {
-				cav.setX(luncamp - img);
+				cav.setX(luncamp);
 			}
+			
 		}
-		//pos = campetto.getPos();  //servirebbe a controllare la posizione da GarettaCampo
-		//campetto.contArr();		//servirebbe a controllare gli arrivi da GarettaCampo
+				
 		
 	}
+	
+	
 
 }
