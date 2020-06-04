@@ -1,1 +1,0 @@
-typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"Magrini","l":"Cavallo"},{"p":"Magrini","l":"GarettaPista"},{"p":"Magrini","l":"Main"},{"p":"Magrini","l":"Pista"},{"p":"Magrini","l":"ThreadCavallo"}]
